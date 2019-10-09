@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 1: Tạo hàm alertMessage() hiển thị hộp thoại chứa chuỗi  "Xin chao".-->
+<!--Gọi hàm từ trong phần body của trang web.-->
+
+<!--<script>-->
+<!--    function alertMessage() {-->
+<!--        alert("Xin chao")-->
+<!--    }-->
+<!--    alertMessage()-->
+<!--</script>-->
+
+<!--Bài 2:-->
+<!--<script>-->
+<!--    function add() {-->
+<!--        a++;-->
+<!--    }-->
+<!--    var a=1-->
+<!--    add(a);-->
+<!--    document.write(a)-->
+<!--</script>-->
+
+<!--Bài 3: Tạo hàm nhận vào hai tham số. -->
+<!--Nếu giá trị của tham số thứ nhất lớn hơn tham số thứ hai,-->
+<!--hiển thị hộp thoại thông báo cho người dùng.-->
+<!--Nếu giá trị của tham số thứ nhất nhỏ hơn hoặc bằng tham số thứ hai, -->
+<!--trả về tổng của hai tham số.-->
+
+<!--<script>-->
+<!--    function display(a, b) {-->
+<!--        if (a > b) {-->
+<!--            alert(a + " lớn hơn " + b)-->
+<!--        } else-->
+<!--            return a + b;-->
+<!--    }-->
+<!--    let a = Number(prompt("enter a"));-->
+<!--    let b = Number(prompt("enter b"));-->
+<!--    sum = display(a, b)-->
+<!--    document.write(sum)-->
+<!--</script>-->
+
+<!--Bài 4:-->
+<!--<script>function addNumbers() {-->
+<!--    firstNum = 4;-->
+<!--    secondNum = 8;-->
+<!--    result = firstNum + secondNum;-->
+<!--    return result;-->
+<!--}-->
+<!--result = 0;-->
+<!--alert(result = addNumbers());-->
+<!--</script>-->
+
+<!--Bài 5:-->
+<script>
+    function findIndex(){
+        let index=-1;
+        let input = prompt("Input")
+        let arr = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+        let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"]
+        for(let i=0;i<arr.length;i++){
+            if (input===arr[i]){
+                index=i;
+                break;
+            }
+        }
+        if (index!=-1){
+            document.write(arr2[index])
+        }else {
+            document.write("Not found")
+        }
+    }
+    findIndex();
+</script>
+</body>
+</html>
